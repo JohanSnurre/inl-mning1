@@ -74,7 +74,8 @@ namespace Inlämningsuppgift1
             
             int difference = paid - price;
             int[] resultingAmount = new int[7];                     //store the amount of each value in a new array
-            string[] nameOfValues = new string[7] {"femhundralappar", "hundralappar", "femtiolappar","tjugolappar","tiokronor","femkronor","enkronor"};
+            string[] nameOfValuesPlur = new string[7] {"femhundralappar", "hundralappar", "femtiolappar","tjugolappar","tiokronor","femkronor","enkronor"};     //Names for the currencies in plural
+            string[] nameOfValuesSing = new string[7] { "femhundralapp", "hundralapp", "femtiolapp", "tjugolapp", "tiokrona", "femkrona", "enkrona" };          //Names for the currencies in singular
             Console.WriteLine("Växel tillbaka: ");
             for (int i = 0; i < resultingAmount.Length; i++)
             {
@@ -86,7 +87,9 @@ namespace Inlämningsuppgift1
                     difference -= currencies[i];
                 }
                 if (resultingAmount[i] == 0) continue;              //If the amount of a certain value is 0, it is not printed out
-                Console.WriteLine(resultingAmount[i] + " " + nameOfValues[i]);
+                if (resultingAmount[i]>1) Console.WriteLine(resultingAmount[i] + " " + nameOfValuesPlur[i]);
+                else Console.WriteLine(resultingAmount[i] + " " + nameOfValuesSing[i]);
+
             }
 
 
