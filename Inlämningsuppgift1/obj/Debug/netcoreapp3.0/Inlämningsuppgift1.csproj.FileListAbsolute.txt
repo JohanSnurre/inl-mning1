@@ -1,0 +1,11 @@
+C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\obj\Debug\netcoreapp3.0\Inlämningsuppgift1.csprojAssemblyReference.cache
+C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\obj\Debug\netcoreapp3.0\Inlämningsuppgift1.AssemblyInfoInputs.cache
+C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\obj\Debug\netcoreapp3.0\Inlämningsuppgift1.AssemblyInfo.cs
+C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\bin\Debug\netcoreapp3.0\Inlämningsuppgift1.exe
+C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\bin\Debug\netcoreapp3.0\Inlämningsuppgift1.deps.json
+C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\bin\Debug\netcoreapp3.0\Inlämningsuppgift1.runtimeconfig.json
+C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\bin\Debug\netcoreapp3.0\Inlämningsuppgift1.runtimeconfig.dev.json
+C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\bin\Debug\netcoreapp3.0\Inlämningsuppgift1.dll
+C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\bin\Debug\netcoreapp3.0\Inlämningsuppgift1.pdb
+C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\obj\Debug\netcoreapp3.0\Inlämningsuppgift1.dll
+C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\obj\Debug\netcoreapp3.0\Inlämningsuppgift1.pdb
