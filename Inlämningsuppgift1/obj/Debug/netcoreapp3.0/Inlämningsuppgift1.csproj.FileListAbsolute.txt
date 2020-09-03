@@ -8,3 +8,4 @@ C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\bin\Debug\ne
 C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\bin\Debug\netcoreapp3.0\Inlämningsuppgift1.pdb
 C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\obj\Debug\netcoreapp3.0\Inlämningsuppgift1.dll
 C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\obj\Debug\netcoreapp3.0\Inlämningsuppgift1.pdb
+C:\Users\Johan\source\repos\Inlämningsuppgift1\Inlämningsuppgift1\obj\Debug\netcoreapp3.0\Inlämningsuppgift1.csprojAssemblyReference.cache
