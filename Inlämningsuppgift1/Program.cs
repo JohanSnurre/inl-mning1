@@ -10,11 +10,9 @@ namespace Inlämningsuppgift1
 
 
 
-        static void Main(string[] args)
+        static void Main(string[] args)                            //The main function
         {
-
-
-            procedure();
+            procedure();                                           //A call to the procedure function
         }
 
         private static int askPrice()
@@ -22,19 +20,20 @@ namespace Inlämningsuppgift1
             Console.WriteLine("Ange pris: ");
             String strPrice = Console.ReadLine();                   //Asking for the price
             int price;
-            try {                                                   //Testing that the user actually gives some amount of money
+            try
+            {                                                   //Testing that the user actually gives some amount of money
                 price = Int32.Parse(strPrice);                      //Converting the input string to an int
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine("That's an invalid amount of money");
                 return askPrice();
             }
-            
+
             if (price == 0)                                         //If the item is free, they  shouldn't have to pay anything
             {
                 Console.WriteLine("It's free, take it");
-                
+
             }
             else if (price < 0)                                     //If the item has a negative cost, the buyer receives money for taking it
             {
@@ -49,15 +48,16 @@ namespace Inlämningsuppgift1
             String strPaid = Console.ReadLine();
 
             int paid;
-            try {                                                   //Checks that the input is valid
+            try
+            {                                                   //Checks that the input is valid
                 paid = Int32.Parse(strPaid);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine("That's an invalid amount of money");
                 return askPayment();
             }
-            
+
             return paid;                                            //Returns the payment
 
         }
@@ -67,33 +67,33 @@ namespace Inlämningsuppgift1
             int price = askPrice();
             if (price == 0 || price < 0) return;                    //The program shouldn't continue if the item is free of charge
             int paid = askPayment();
-            if(paid < price)                                        //If the given payment is too low, tell customer that
+            if (paid < price)                                        //If the given payment is too low, tell customer that
             {
                 Console.WriteLine("I'm sorry, but your funds are insufficient");
             }
-            
+
             int difference = paid - price;
             int[] resultingAmount = new int[7];                     //store the amount of each value in a new array
-            string[] nameOfValuesPlur = new string[7] {"femhundralappar", "hundralappar", "femtiolappar","tjugolappar","tiokronor","femkronor","enkronor"};     //Names for the currencies in plural
+            string[] nameOfValuesPlur = new string[7] { "femhundralappar", "hundralappar", "femtiolappar", "tjugolappar", "tiokronor", "femkronor", "enkronor" };     //Names for the currencies in plural
             string[] nameOfValuesSing = new string[7] { "femhundralapp", "hundralapp", "femtiolapp", "tjugolapp", "tiokrona", "femkrona", "enkrona" };          //Names for the currencies in singular
             Console.WriteLine("Växel tillbaka: ");
-            for (int i = 0; i < resultingAmount.Length; i++)
-            {
-                
-
+            for (int i = 0; i < resultingAmount.Length; i++)        //Loop through each of the currencies and remove as many as possible of those from the difference
+            {                                                       //Add the amount of removed currencies to the resultingAmount array
                 while (difference - currencies[i] >= 0)
                 {
                     resultingAmount[i]++;
                     difference -= currencies[i];
                 }
                 if (resultingAmount[i] == 0) continue;              //If the amount of a certain value is 0, it is not printed out
-                if (resultingAmount[i]>1) Console.WriteLine(resultingAmount[i] + " " + nameOfValuesPlur[i]);
+
+                //Print out the resulting amount of currencies with the correct grammar
+                if (resultingAmount[i] > 1) Console.WriteLine(resultingAmount[i] + " " + nameOfValuesPlur[i]);
                 else Console.WriteLine(resultingAmount[i] + " " + nameOfValuesSing[i]);
 
             }
 
 
-            
+
 
         }
 
