@@ -1,11 +1,13 @@
 ﻿using System;
 
+//Author: Johan Larsson -> Johlax-8
+
 namespace Inlämningsuppgift1
 {
 
     class Program
     {
-        //Member variables
+        //Class variables
         private static int[] currencies = new int[7] { 500, 100, 50, 20, 10, 5, 1 };    //An array containing the currencies in a decreasing order
         private static string[] nameOfValuesPlur = new string[7] { "femhundralappar", "hundralappar", "femtiolappar", "tjugolappar", "tiokronor", "femkronor", "enkronor" };     //Names for the currencies in plural
         private static string[] nameOfValuesSing = new string[7] { "femhundralapp", "hundralapp", "femtiolapp", "tjugolapp", "tiokrona", "femkrona", "enkrona" };          //Names for the currencies in singular
@@ -92,12 +94,6 @@ namespace Inlämningsuppgift1
                 else Console.WriteLine(resultingAmount[i] + " " + nameOfValuesSing[i]);
 
             }
-
-
-
-
         }
-
-
     }
 }
